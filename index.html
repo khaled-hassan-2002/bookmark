@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bookmark</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <section class=" py-5">
+            <div class="container">
+                <h1
+                    class="pb-5 text-center pacifico-regular border-style">Bookmarker</h1>
+                <h3 class="my-4 text-center">
+                    <i class="fa-solid fa-bookmark"></i> Bookmark your favorite
+                    sites
+                    <i class="fa-solid fa-bookmark"></i></h3>
+                <form action class="pb-3 border-style">
+                    <div class="mb-3">
+                        <i class="fa-solid fa-book-bookmark me-2"></i>
+                        <label for="nameinput"
+                            class="form-label fw-bold">Site Name</label>
+                        <input type="text" class="form-control"
+                            id="nameinput"
+                            placeholder="Bookmark Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <i class="fa-solid fa-link me-2"></i>
+                        <label for="urlinput"
+                            class="form-label fw-bold">Site URL</label>
+                        <input type="text" class="form-control"
+                            id="urlinput"
+                            placeholder="Website URL " required>
+                    </div>
+                    <div class="alert alert-danger " id="error" role="alert">
+                        
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" onclick="add()"
+                            class="btn btn-danger my-2 px-5">Submit</button>
+                    </div>
+                </form>
+                <table class="table table-hover mt-4 text-center">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="demo">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

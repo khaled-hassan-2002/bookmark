@@ -1,0 +1,23 @@
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 51px;
+}
+
+.border-style {
+    border-bottom-style: dotted;
+}
+
+section {
+    background-color: #f7ecde;
+}
+
+h3 {
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+#error{
+    display: none;
+}
